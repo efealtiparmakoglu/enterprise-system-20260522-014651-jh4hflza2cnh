@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260522-014651-jh4hflza2cnh-service
+spec:
+  selector:
+    app: enterprise-system-20260522-014651-jh4hflza2cnh
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
